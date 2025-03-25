@@ -37,7 +37,7 @@ fun Intro(navController: NavController) {
 
         Image(
             painter = painterResource(id = R.drawable.intro),
-            contentDescription = null,
+            contentDescription = "null",
             modifier = Modifier
                 .fillMaxSize()
                 .constrainAs(logo) {
@@ -46,7 +46,7 @@ fun Intro(navController: NavController) {
         )
         Button(
             onClick = {
-                Log.d("Intro", "Imagem 'intro' clicada")
+                Log.d("Intro", "Image 'intro' clicked")
                 navController.navigate("mainActivityHome")
             },
             modifier = Modifier
@@ -58,9 +58,10 @@ fun Intro(navController: NavController) {
                 .height(60.dp)
                 .fillMaxWidth(0.8f),
             shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(Color.White)
         ) {
             Text(
-                text = "Acesse Agora!",
+                text = "Access Now!",
                 color = Color.Black,
                 style = TextStyle(
                     fontSize = 18.sp,
