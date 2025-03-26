@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -288,6 +289,8 @@ fun Dashboard() {
                         start.linkTo(parent.start)
                     }
             )
+            Spacer(modifier = Modifier.height(16.dp))
+
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.Center,
@@ -395,114 +398,118 @@ fun Dashboard() {
                     )
                 }
             }
+        }
 
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.Center,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(start = 16.dp, end = 16.dp, top = 12.dp)
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Center,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 16.dp, end = 16.dp, top = 12.dp)
+        ) {
+            Column(
+                modifier = Modifier.weight(0.25f),
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Column(
-                    modifier = Modifier.weight(0.25f),
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.cafe11),
-                        contentDescription = null,
-                        modifier = Modifier
-                            .size(100.dp)
-                            .padding(top = 8.dp, bottom = 4.dp)
-                            .background(
-                                color = Color(android.graphics.Color.parseColor("#EEEEFB")),
-                                shape = RoundedCornerShape(10.dp)
-                            )
-                            .padding(16.dp),
-                    )
-                    Text(
-                        text = "Frappé",
-                        fontSize = 14.sp,
-                        fontWeight = FontWeight.Bold,
-                        modifier = Modifier.padding(top = 8.dp),
-                        color = Color(android.graphics.Color.parseColor("#140100"))
-                    )
-                }
+                Image(
+                    painter = painterResource(id = R.drawable.cafe11),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(top = 8.dp, bottom = 4.dp)
+                        .background(
+                            color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                            shape = RoundedCornerShape(10.dp)
+                        )
+                        .padding(16.dp),
+                )
+                Text(
+                    text = "Frappé",
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(top = 8.dp),
+                    color = Color(android.graphics.Color.parseColor("#140100"))
+                )
+            }
 
-                Column(
-                    modifier = Modifier.weight(0.25f),
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.cafe12),
-                        contentDescription = null,
-                        modifier = Modifier
-                            .size(100.dp)
-                            .padding(top = 8.dp, bottom = 4.dp)
-                            .background(
-                                color = Color(android.graphics.Color.parseColor("#EEEEFB")),
-                                shape = RoundedCornerShape(10.dp)
-                            )
-                            .padding(16.dp),
-                    )
-                    Text(
-                        text = "Dalgona",
-                        fontSize = 14.sp,
-                        fontWeight = FontWeight.Bold,
-                        modifier = Modifier.padding(top = 8.dp),
-                        color = Color(android.graphics.Color.parseColor("#140100"))
-                    )
-                }
+            Column(
+                modifier = Modifier.weight(0.25f),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.cafe12),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(top = 8.dp, bottom = 4.dp)
+                        .background(
+                            color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                            shape = RoundedCornerShape(10.dp)
+                        )
+                        .padding(16.dp),
+                )
+                Text(
+                    text = "Dalgona",
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(top = 8.dp),
+                    color = Color(android.graphics.Color.parseColor("#140100"))
+                )
+            }
 
-                Column(
-                    modifier = Modifier.weight(0.25f),
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.cafe13),
-                        contentDescription = null,
-                        modifier = Modifier
-                            .size(100.dp)
-                            .padding(top = 8.dp, bottom = 4.dp)
-                            .background(
-                                color = Color(android.graphics.Color.parseColor("#EEEEFB")),
-                                shape = RoundedCornerShape(10.dp)
-                            )
-                            .padding(16.dp),
-                    )
-                    Text(
-                        text = "Panna",
-                        fontSize = 14.sp,
-                        fontWeight = FontWeight.Bold,
-                        modifier = Modifier.padding(top = 8.dp),
-                        color = Color(android.graphics.Color.parseColor("#140100"))
-                    )
-                }
+            Column(
+                modifier = Modifier.weight(0.25f),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.cafe13),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(top = 8.dp, bottom = 4.dp)
+                        .background(
+                            color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                            shape = RoundedCornerShape(10.dp)
+                        )
+                        .padding(16.dp),
+                )
+                Text(
+                    text = "Panna",
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(top = 8.dp),
+                    color = Color(android.graphics.Color.parseColor("#140100"))
+                )
+            }
 
-                Column(
-                    modifier = Modifier.weight(0.25f),
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.cafe14),
-                        contentDescription = null,
-                        modifier = Modifier
-                            .size(100.dp)
-                            .padding(top = 8.dp, bottom = 4.dp)
-                            .background(
-                                color = Color(android.graphics.Color.parseColor("#EEEEFB")),
-                                shape = RoundedCornerShape(10.dp)
-                            )
-                            .padding(16.dp),
-                    )
-                    Text(
-                        text = "Pingado",
-                        fontSize = 14.sp,
-                        fontWeight = FontWeight.Bold,
-                        modifier = Modifier.padding(top = 8.dp),
-                        color = Color(android.graphics.Color.parseColor("#140100"))
-                    )
-                }
+            Column(
+                modifier = Modifier.weight(0.25f),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.cafe14),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(top = 8.dp, bottom = 4.dp)
+                        .background(
+                            color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                            shape = RoundedCornerShape(10.dp)
+                        )
+                        .padding(16.dp),
+                )
+                Text(
+                    text = "Pingado",
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(top = 8.dp),
+                    color = Color(android.graphics.Color.parseColor("#140100"))
+                )
             }
         }
     }
 }
+
+
