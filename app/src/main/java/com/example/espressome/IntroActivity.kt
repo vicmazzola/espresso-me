@@ -36,7 +36,7 @@ fun Intro(navController: NavController) {
         val (logo, button) = createRefs()
 
         Image(
-            painter = painterResource(id = R.drawable.intro),
+            painter = painterResource(id = R.drawable.coffee),
             contentDescription = "null",
             modifier = Modifier
                 .fillMaxSize()
@@ -52,21 +52,20 @@ fun Intro(navController: NavController) {
             modifier = Modifier
                 .constrainAs(button) {
                     bottom.linkTo(parent.bottom, margin = 62.dp)
-                    start.linkTo(parent.start, margin = 42.dp)
-                    end.linkTo(parent.end, margin = 42.dp)
+                    start.linkTo(parent.start, margin = 82.dp)
+                    end.linkTo(parent.end, margin = 82.dp)
                 }
-                .height(60.dp)
-                .fillMaxWidth(0.8f),
-            shape = RoundedCornerShape(8.dp),
+                .height(60.dp),
+
+            shape = RoundedCornerShape(14.dp),
             colors = ButtonDefaults.buttonColors(Color.White)
         ) {
             Text(
-                text = "Access Now!",
+                text = "ACCESS NOW!",
                 color = Color.Black,
                 style = TextStyle(
-                    fontSize = 18.sp,
+                    fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
-                    fontStyle = FontStyle.Italic
                 )
             )
         }
