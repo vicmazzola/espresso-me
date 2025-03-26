@@ -40,7 +40,9 @@ import androidx.constraintlayout.compose.ConstraintLayout
 
 @Preview
 @Composable
-fun dashboard() {
+fun Dashboard() {
+
+    //ENABLE SCROLL
     val scrollState = rememberScrollState()
 
     Column(
