@@ -50,7 +50,7 @@ fun Dashboard() {
         Modifier
             .fillMaxHeight()
             .fillMaxWidth()
-            .background(color = Color(android.graphics.Color.parseColor("#FFFFFF")))
+            .background(color = Color(android.graphics.Color.parseColor("#c9b6a5")))
             .verticalScroll(scrollState),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -66,8 +66,7 @@ fun Dashboard() {
                         start.linkTo(parent.start)
                     }
                     .background(
-                        color = Color(android.graphics.Color.parseColor("#000000")),
-                        shape = RoundedCornerShape(bottomEnd = 40.dp, bottomStart = 40.dp)
+                        color = Color(android.graphics.Color.parseColor("#3e271a")),
                     )
             )
 
@@ -166,12 +165,7 @@ fun Dashboard() {
                 .shadow(3.dp, shape = RoundedCornerShape(25.dp))
                 .height(100.dp)
                 .background(
-                    brush = Brush.horizontalGradient(
-                        colors = listOf(
-                            Color(android.graphics.Color.parseColor("#000000")),
-                            Color(android.graphics.Color.parseColor("#B6C2FE"))
-                        )
-                    ), shape = RoundedCornerShape(25.dp)
+                    color = Color(android.graphics.Color.parseColor("#3e271a")),
                 )
         ) {
             val (img, text1) = createRefs()
@@ -210,12 +204,7 @@ fun Dashboard() {
                 .shadow(3.dp, shape = RoundedCornerShape(25.dp))
                 .height(100.dp)
                 .background(
-                    brush = Brush.horizontalGradient(
-                        colors = listOf(
-                            Color(android.graphics.Color.parseColor("#000000")),
-                            Color(android.graphics.Color.parseColor("#B6C2FE"))
-                        )
-                    ), shape = RoundedCornerShape(25.dp)
+                    color = Color(android.graphics.Color.parseColor("#3e271a")),
                 )
         ) {
             val (img, text1) = createRefs()
@@ -254,12 +243,7 @@ fun Dashboard() {
                 .shadow(3.dp, shape = RoundedCornerShape(25.dp))
                 .height(100.dp)
                 .background(
-                    brush = Brush.horizontalGradient(
-                        colors = listOf(
-                            Color(android.graphics.Color.parseColor("#000000")),
-                            Color(android.graphics.Color.parseColor("#B6C2FE"))
-                        )
-                    ), shape = RoundedCornerShape(25.dp)
+                    color = Color(android.graphics.Color.parseColor("#3e271a")),
                 )
         ) {
             val (img, text1) = createRefs()
