@@ -67,6 +67,7 @@ fun Dashboard() {
                     }
                     .background(
                         color = Color(android.graphics.Color.parseColor("#3e271a")),
+                        shape = RoundedCornerShape(bottomEnd = 40.dp, bottomStart = 40.dp)
                     )
             )
 
@@ -165,7 +166,7 @@ fun Dashboard() {
                 .shadow(3.dp, shape = RoundedCornerShape(25.dp))
                 .height(100.dp)
                 .background(
-                    color = Color(android.graphics.Color.parseColor("#3e271a")),
+                    color = Color(android.graphics.Color.parseColor("#704830")),
                 )
         ) {
             val (img, text1) = createRefs()
@@ -204,7 +205,7 @@ fun Dashboard() {
                 .shadow(3.dp, shape = RoundedCornerShape(25.dp))
                 .height(100.dp)
                 .background(
-                    color = Color(android.graphics.Color.parseColor("#3e271a")),
+                    color = Color(android.graphics.Color.parseColor("#704830")),
                 )
         ) {
             val (img, text1) = createRefs()
@@ -243,7 +244,7 @@ fun Dashboard() {
                 .shadow(3.dp, shape = RoundedCornerShape(25.dp))
                 .height(100.dp)
                 .background(
-                    color = Color(android.graphics.Color.parseColor("#3e271a")),
+                    color = Color(android.graphics.Color.parseColor("#704830")),
                 )
         ) {
             val (img, text1) = createRefs()
@@ -274,10 +275,10 @@ fun Dashboard() {
                     }
             )
             Spacer(modifier = Modifier.height(16.dp))
-
+        }
             Row(
                 verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.Center,
+                horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterHorizontally),
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(start = 16.dp, end = 16.dp, top = 24.dp)
@@ -293,7 +294,7 @@ fun Dashboard() {
                             .size(100.dp)
                             .padding(top = 8.dp, bottom = 4.dp)
                             .background(
-                                color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                                color = Color(android.graphics.Color.parseColor("#3e271a")),
                                 shape = RoundedCornerShape(10.dp)
                             )
                             .padding(16.dp),
@@ -318,7 +319,7 @@ fun Dashboard() {
                             .size(100.dp)
                             .padding(top = 8.dp, bottom = 4.dp)
                             .background(
-                                color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                                color = Color(android.graphics.Color.parseColor("#3e271a")),
                                 shape = RoundedCornerShape(10.dp)
                             )
                             .padding(16.dp),
@@ -343,7 +344,7 @@ fun Dashboard() {
                             .size(100.dp)
                             .padding(top = 8.dp, bottom = 4.dp)
                             .background(
-                                color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                                color = Color(android.graphics.Color.parseColor("#3e271a")),
                                 shape = RoundedCornerShape(10.dp)
                             )
                             .padding(16.dp),
@@ -368,7 +369,7 @@ fun Dashboard() {
                             .size(100.dp)
                             .padding(top = 8.dp, bottom = 4.dp)
                             .background(
-                                color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                                color = Color(android.graphics.Color.parseColor("#3e271a")),
                                 shape = RoundedCornerShape(10.dp)
                             )
                             .padding(16.dp),
@@ -382,13 +383,12 @@ fun Dashboard() {
                     )
                 }
             }
-        }
 
         Spacer(modifier = Modifier.height(16.dp))
 
         Row(
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.Center,
+            horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterHorizontally),
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 16.dp, end = 16.dp, top = 12.dp)
@@ -404,7 +404,7 @@ fun Dashboard() {
                         .size(100.dp)
                         .padding(top = 8.dp, bottom = 4.dp)
                         .background(
-                            color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                            color = Color(android.graphics.Color.parseColor("#3e271a")),
                             shape = RoundedCornerShape(10.dp)
                         )
                         .padding(16.dp),
@@ -429,7 +429,7 @@ fun Dashboard() {
                         .size(100.dp)
                         .padding(top = 8.dp, bottom = 4.dp)
                         .background(
-                            color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                            color = Color(android.graphics.Color.parseColor("#3e271a")),
                             shape = RoundedCornerShape(10.dp)
                         )
                         .padding(16.dp),
@@ -454,7 +454,7 @@ fun Dashboard() {
                         .size(100.dp)
                         .padding(top = 8.dp, bottom = 4.dp)
                         .background(
-                            color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                            color = Color(android.graphics.Color.parseColor("#3e271a")),
                             shape = RoundedCornerShape(10.dp)
                         )
                         .padding(16.dp),
@@ -479,7 +479,7 @@ fun Dashboard() {
                         .size(100.dp)
                         .padding(top = 8.dp, bottom = 4.dp)
                         .background(
-                            color = Color(android.graphics.Color.parseColor("#EEEEFB")),
+                            color = Color(android.graphics.Color.parseColor("#3e271a")),
                             shape = RoundedCornerShape(10.dp)
                         )
                         .padding(16.dp),
