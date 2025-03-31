@@ -2,6 +2,12 @@
 
 Mobile app built with **Kotlin** and **Jetpack Compose** that brings a delightful UI inspired by coffee culture. Start with a stylish intro screen and explore various coffee types in a smooth, scrollable dashboard.
 
+
+
+<img src="https://github.com/user-attachments/assets/c5b6a3a2-75bc-4709-b3bd-5d9067484582" alt="Screenshot_20250327_080404" width="300"/>
+
+
+
 ## 🚀 Features
 
 - Kotlin + Jetpack Compose
